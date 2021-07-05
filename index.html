@@ -8,50 +8,43 @@
     <link rel="stylesheet" href="./resources/style/style.css">
 </head>
 <body>
-      <main class='column is-one-third is-offset-one-third'>
-        <h1>Where do you want to land?</h1>
+      <main>
+        <h1>Where do you want to explore?</h1>
         <form autocomplete="off">
-            <label class="label">Enter City:</label>
-            <div class="control has-icons-right">
-                <span class="icon is-small is-right">
+            <label>Enter City:</label>
+            <div class="search">
+                <input type="text" id="city" class='input'>
+                <span>
                     <i class="fas fa-city"></i>
                 </span>
-                <input type="text" id="city" class='input'>
             </div>
-          <button id="button" type="submit" class="button">Submit</button>
+          <button id="button" type="submit">Submit</button>
         </form>
       </main>
-      <div class="container">
-      <div id="destination">
-  
-      </div>
-      <div class="sectiontitle  card">
-        <h2>CURRENT WEATHER</h2>
-      </div>
-      <section id="weather" class="section">
-  
-          <div class="weather" id="weather1">
-  
-          </div>
+
+    <div class="results">
+
+      <section id="destination">
   
       </section>
-      <div class="sectiontitle  card">
-        <h2>TOP ATTRACTIONS</h2>
-      </div>
-      <section id="venues" class="section">
-        <div class="venue" id="venue1">
-  
-        </div>
-        <div class="venue" id="venue2">
-  
-        </div>
-        <div class="venue" id="venue3">
-  
+      <section id="weather" class="card">
+        <header class="sectiontitle">
+            <h2>WEATHER</h2>
+        </header>
+          <article id="weather1">
+          </article>
+      </section>
+      <section id="venues">
+          <header>
+            <h2>TOP ATTRACTIONS</h2>
+          </header>
+        <div class="venues">
         </div>
       </section>
-      <footer>
-      </footer>
     </div>
+    <footer>
+        Third Party API Codecademy Project.
+    </footer>
     <script src="./resources/js/app.js" type="module"></script>
     <script src="https://kit.fontawesome.com/9e4d24e572.js" crossorigin="anonymous"></script>
 </body>

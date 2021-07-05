@@ -1,17 +1,130 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
-h1 {
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
 }
+
+body {
+    display: grid;
+    grid-template: 20vh 1fr 50px / repeat(12, 1fr);
+    justify-content: center;
+    height: 100vh;
+    gap: 5px 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    grid-area: 1 / 1 / span 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 2em;
+}
+
+.results {
+    grid-area: 2 / 2 / span 1 / span 10;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    height: 100%;
+}
+
+
+footer {
+    grid-area: 3 / 1 / span 1 / -1;
+    align-self: end;
+    text-align: center;
+    padding: 1em;
+}
+
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    padding: 0.2em;
+}
+
 form {
     margin: 1em auto;
     display: flex;
     flex-direction: column;
-}
-button {
-    margin: 1em 0;
-    align-self: flex-end;
+    font-size: 1.2rem;
 }
 
-.sectiontitle {
-    display: none;
+form label {
+    margin-bottom: 0.3em;
+}
+form .search {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+form i {
+    color:rgba(0, 0, 0, 0.4);
+    padding: 0.2em;
+}
+
+form input {
+    border: none;
+    padding: 0.2em 0;
+    background-color: transparent;
+    margin: 0.2em;
+    font-size: 1.1em;
+}
+button {
+    margin: 0.5em 0;
+    align-self: flex-end;
+    padding: 0.2em 0.5em;
+    font-size: 1em;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: #eb683d;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 1em;
+    min-height: 200px;
+    width: 250px;
+    line-height: 1.5;
+    margin: 0.2em 0.5em;
+    display: flex;
+    flex-flow: column;
+}
+
+.card img {
+    align-self: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#destination {
+    text-align: center;
+}
+
+#weather {
+    text-transform: capitalize;
+}
+
+section {
+    padding: 1em;
+}
+
+section>header {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.venues {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-between;
 }
