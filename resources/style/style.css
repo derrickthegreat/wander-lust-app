@@ -1,0 +1,17 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+h1 {
+    text-align: center;
+}
+form {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    margin: 1em 0;
+    align-self: flex-end;
+}
+
+.sectiontitle {
+    display: none;
+}
